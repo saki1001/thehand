@@ -348,6 +348,7 @@ footer #email-signup {
 
 #mc_embed_signup div.mce_inline_error {
     margin: 0 !important;
+    text-align: left;
 }
 
 #mc_embed_signup label {
