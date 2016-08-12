@@ -188,11 +188,7 @@ header nav a {
 }
 
 #main {
-    margin-bottom: 4em;
-}
-
-.page.home #main {
-    margin-bottom: 10em;
+    margin-bottom: 150px;
 }
 
 #main a,
@@ -282,7 +278,7 @@ header nav a {
 
 #main ul {
     font-size: 18px;
-    width: 25%;
+    width: 33.33%;
     float: left;
 }
 
@@ -318,6 +314,7 @@ footer #email-signup {
     overflow: hidden;
 }
 
+
 #mc_embed_signup .mc-field-group,
 #mc_embed_signup .clear {
     float: left;
@@ -332,8 +329,22 @@ footer #email-signup {
 }
 
 #mc_embed_signup #mce-responses {
-    width: 100%;
-    clear: both;
+    width: 50%;
+    max-width: 400px;
+    height: 96px;
+    position: absolute;
+    top: -96px;
+    float: none;
+    overflow: hidden;
+}
+
+#mc_embed_signup #mce-responses .response {
+    height: 48px;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.2;
+    background-color: white;
+    border: #e20031 solid 4px;    
 }
 
 #mc_embed_signup label {
@@ -385,6 +396,10 @@ footer #copy {
     #mc_embed_signup .mc-field-group,
     #mc_embed_signup .clear {
         margin-bottom: 15px;
+    }
+
+    #mc_embed_signup #mce-responses {
+        width: 90%;
     }
 
     footer #copy {
