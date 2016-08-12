@@ -117,7 +117,7 @@ footer {
 }
 
 a, a:link, a:visited {
-    color: orangered;
+    color: #e20031;
     text-decoration: none;
     -webkit-transition: color .25s ease-in-out;
        -moz-transition: color .25s ease-in-out;
@@ -181,6 +181,16 @@ header nav a {
 
 .page.home #main {
     margin-bottom: 10em;
+}
+
+#main a,
+#main a:link,
+#main a:visited {
+    color: midnightblue;
+}
+
+.page.home #main a:hover {
+    color: maroon;
 }
 
 .page.about #main,
