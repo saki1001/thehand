@@ -346,7 +346,7 @@ footer #email-signup {
     border: #e20031 solid 4px;    
 }
 
-#mc_embed_signup #mce-responses div.mce_inline_error {
+#mc_embed_signup div.mce_inline_error {
     margin: 0 !important;
 }
 
