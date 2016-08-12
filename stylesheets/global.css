@@ -196,12 +196,25 @@ header nav a {
     margin-bottom: 1.5em;
 }
 
+.page.about #main section p {
+    margin-bottom: 0.5em;
+}
+
 .page.about #main h2,
-.page.contact #main h2, 
 .page.about #main h3,
+.page.contact #main h2, 
 .page.contact #main h3 {
     font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
     font-size: 22px;
+}
+
+.page.about #main h2,
+.page.about #main h3 {
+    margin-bottom: 1em;
+}
+
+.page.contact #main h2,
+.page.contact #main h3 {
     margin-bottom: 0.5em;
 }
 
