@@ -98,7 +98,7 @@ http://ryanfait.com/
 */
 
 footer, .push {
-    height: 80px; /* .push must be the same height as .footer */
+    height: 85px; /* .push must be the same height as .footer */
 }
 
 .push {
@@ -129,7 +129,7 @@ footer {
     width: 90%;
     max-width: 800px;
     padding: 0 5%;
-    margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */;
+    margin: 0 auto -85px; /* the bottom margin is the negative value of the footer's height */;
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -314,7 +314,6 @@ footer #email-signup {
     overflow: hidden;
 }
 
-
 #mc_embed_signup .mc-field-group,
 #mc_embed_signup .clear {
     float: left;
@@ -345,6 +344,10 @@ footer #email-signup {
     line-height: 1.2;
     background-color: white;
     border: #e20031 solid 4px;    
+}
+
+#mc_embed_signup #mce-responses div.mce_inline_error {
+    margin: 0 !important;
 }
 
 #mc_embed_signup label {
