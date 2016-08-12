@@ -64,38 +64,6 @@ body {
             animation:myfirst 10s linear infinite;
 }
 
-/*
-Sticky Footer by Ryan Fait
-http://ryanfait.com/
-*/
-
-footer, .push {
-    height: 30px; /* .push must be the same height as .footer */
-}
-
-.push {
-    width: 100%;
-    overflow: hidden; /*clearfix*/
-}
-
-footer {
-    width: 100%;
-    max-width: 800px;
-    text-align: right;
-    font-size: 12px;
-    margin: 0 auto;
-}
-
-.page {
-    max-width: 800px;
-    padding: 0 1em;
-    margin: 0 auto -30px; /* the bottom margin is the negative value of the footer's height */;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    position: relative;
-}
-
 @keyframes myfirst {
     0%, 20%, 80%, 100%   {background-color:#fcee21;}
     50%  {background-color:yellowgreen;}
@@ -122,6 +90,50 @@ a, a:link, a:visited {
     -webkit-transition: color .25s ease-in-out;
        -moz-transition: color .25s ease-in-out;
             transition: color .25s ease-in-out;
+}
+
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+
+footer, .push {
+    height: 80px; /* .push must be the same height as .footer */
+}
+
+.push {
+    width: 100%;
+    overflow: hidden; /*clearfix*/
+    position: relative;
+    z-index: -1;
+}
+
+footer {
+    width: 100%;
+    background-color: plum;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-wrap {
+    width: 90%;
+    max-width: 800px;
+    text-align: right;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+.page {
+    width: 90%;
+    max-width: 800px;
+    padding: 0 5%;
+    margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
 }
 
 header {
@@ -283,6 +295,99 @@ header nav a {
     #main ul {
         width: 100%;
         margin-top: 0;
+        float: none;
+    }
+}
+
+footer #email-signup {
+    width: 50%;
+    margin-top: 20px;
+    float: left;
+}
+
+#mc_embed_signup {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size:14px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#mc_embed_signup form {
+    display: block;
+    overflow: hidden;
+}
+
+#mc_embed_signup .mc-field-group,
+#mc_embed_signup .clear {
+    float: left;
+}
+
+#mc_embed_signup .mc-field-group {
+    width: 75%;
+}
+
+#mc_embed_signup .clear {
+    width: 25%;
+}
+
+#mc_embed_signup #mce-responses {
+    width: 100%;
+    clear: both;
+}
+
+#mc_embed_signup label {
+    display: none;
+}
+
+#mc_embed_signup input[type="email"] {
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    text-indent: 15px;
+    border: none;
+    padding: 10px 0;
+}
+
+#mc_embed_signup input[type="submit"] {
+    font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
+    font-size: 18px;
+    border: 0;
+    color: white;
+    background-color: #e20031;
+    line-height: normal;
+    overflow: visible;
+    width: 100%;
+    padding: 10px;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+footer #copy {
+    font-size: 12px;
+    /*color: white;*/
+    margin: 50px 0 18px;
+    text-align: right;
+    float: right;
+}
+
+
+@media screen and (max-width:700px) {
+    footer #email-signup,
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup .clear {
+        width: 100%;
+        float: none;
+    }
+
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup .clear {
+        margin-bottom: 15px;
+    }
+
+    footer #copy {
         float: none;
     }
 }
