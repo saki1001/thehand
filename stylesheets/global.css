@@ -390,4 +390,13 @@ footer #copy {
     footer #copy {
         float: none;
     }
+
+    footer, .push {
+        height: 220px; /* .push must be the same height as .footer */
+    }
+
+    .page {
+        margin: 0 auto -220px; /* the bottom margin is the negative value of the footer's height */;
+    }
+
 }
