@@ -1,0 +1,32 @@
+#header {
+    font-size: 18px;
+    padding-top: 2em;
+    border-bottom: 10px solid #000000;
+    position: relative;
+    z-index: 1;
+
+    #branding {
+        max-width: 50%;
+        margin-bottom: 1em;
+        float: left;
+
+        .site-title {
+            font-size: 22px;
+            margin-bottom: 0.5em;
+        }
+
+        .site-description {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        #branding {
+            float: none;
+        }
+        
+        #branding {
+            max-width: 100%;
+        }
+    }
+}
