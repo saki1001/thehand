@@ -1,10 +1,10 @@
 <?php
    /*
-   Plugin Name: Show Posts by Rayogram
-   Description: This plugin creates custom posts that display shows by The Hand.
+   Plugin Name: Show Posts
+   Description: This plugin creates custom posts for shows/exhibitions held by The Hand.
    Version: 1.0
-   Author: rayogram
-   Author URI: http://rayogram.com
+   Author: Saki Sato
+   Author URI: http://sakisato.com
    License: GPL2
    */
 
@@ -42,7 +42,7 @@
 			'label'                 => 'Show',
 			'description'           => 'A show contains a title, images, and description.',
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'author', 'thumbnail', 'revisions' ),
+			'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions' ),
 			'hierarchical'          => false,
 			'public'                => true,
 			'show_ui'               => true,

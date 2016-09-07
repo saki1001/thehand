@@ -1,5 +1,9 @@
 a {
+	text-decoration: none;
 	color: $color__link;
+    -webkit-transition: color .25s ease-in-out;
+       -moz-transition: color .25s ease-in-out;
+            transition: color .25s ease-in-out;
 
 	&:visited {
 		color: $color__link-visited;

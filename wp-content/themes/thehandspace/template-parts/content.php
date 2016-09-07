@@ -10,6 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php the_post_thumbnail(); ?>
+	
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
@@ -41,7 +43,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php thehandspace_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
