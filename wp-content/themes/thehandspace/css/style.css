@@ -587,7 +587,7 @@ http://ryanfait.com/
 */
 /* line 127, ../sass/elements/_elements.scss */
 footer, .push {
-  height: 85px;
+  height: 117px;
   /* .push must be the same height as .footer */
 }
 
@@ -624,7 +624,7 @@ footer {
   width: 90%;
   max-width: 800px;
   padding: 0 5%;
-  margin: 0 auto -85px;
+  margin: 0 auto -117px;
   /* the bottom margin is the negative value of the footer's height */
   min-height: 100%;
   height: auto !important;
