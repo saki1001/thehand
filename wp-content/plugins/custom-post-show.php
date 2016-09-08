@@ -1,6 +1,6 @@
 <?php
    /*
-   Plugin Name: Show Posts
+   Plugin Name: Art Show Posts
    Description: This plugin creates custom posts for shows/exhibitions held by The Hand.
    Version: 1.0
    Author: Saki Sato
