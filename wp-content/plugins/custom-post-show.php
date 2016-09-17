@@ -54,7 +54,7 @@
 			'has_archive'           => false,
 			'exclude_from_search'   => false,
 			'publicly_queryable'    => true,
-			'rewrite'               => false,
+			'rewrite'            => array( 'slug' => 'show' ),
 			'capability_type'       => 'post',
 		);
 		register_post_type( 'show', $args );
