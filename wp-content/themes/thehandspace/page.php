@@ -26,17 +26,20 @@ get_header(); ?>
 
 				// Include page content as intro?
 				the_content();
-
+				
 				$featured_posts = get_field('featured_posts');
 
-				foreach( $featured_posts as $featured_post ) :
-					// set_query_var( 'my_post', $featured_post );
-					// get_template_part( 'template-parts/content', 'featured' );
-					include(locate_template('template-parts/content-featured.php'));
+				if( $featured_posts ) :
 
+				foreach( $featured_posts as $post ) :
+					setup_postdata($post);
+
+					get_template_part( 'template-parts/content', 'featured' );
+					
 				endforeach;
 
-				wp_reset_query();
+				wp_reset_postdata();
+				endif;
 			
 			elseif( is_page('current') || is_page('past') ) :
 
@@ -55,7 +58,7 @@ get_header(); ?>
 						)
 					);
 
-					$template = 'page';
+					$template = 'featured';
 
 				else :
 					$meta_query = array(
@@ -72,13 +75,16 @@ get_header(); ?>
 						)
 					);
 
-					$template = 'grid';
+					$template = 'past';
 				endif;
 
 				// args
 				$args = array(
 					'numberposts'	=> -1,
 					'post_type'		=> 'show',
+			        'meta_key' => 'start_date',
+			        'orderby'   => 'meta_value',
+			        'order' => 'DESC',
 					'meta_query'	=> $meta_query
 				);
 

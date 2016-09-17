@@ -1,21 +1,49 @@
 nav {
-    margin-bottom: 1em;
+    margin-bottom: 0;
     float: right;
-	
-	li {
-		display: inline;
-    	font-size: 22px;
-    	margin-left: 1em;
+
+    ul {
+        margin: 0 0 0 1em;
+
+        li {
+            display: inline;
+            font-size: 22px;
+            margin-left: 1em;
+
+            a,
+            a:visited,
+            a:active {
+                color: $black;
+            }
+
+            a:hover {
+                color: $periwinkle;
+            }
+
+            &.current-menu-item {
+                a,
+                a:visited,
+                a:active {
+                    color: $periwinkle;
+                }
+
+                a:hover {
+                    color: $black;
+                }
+            }
+        }
     }
-}
 
-@media screen and (max-width:500px) {
-    nav {
-    	float: none;
+    @media screen and (max-width:$mobile__max-width) {
+        float: none;
 
-    	li {
-	        margin: 0 0 0.5em 0;
-	        display: block;
-    	}
+        ul {
+            margin: 1em 0 0 18px;
+
+            li {
+                margin: 0 1em 0 0;
+                // display: block;
+            }
+        }
     }
 }

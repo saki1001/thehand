@@ -11,17 +11,23 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'thehandspace' ); ?></h1>
+		<?php
+		if ( is_page('current') ) : ?>
+			<h1 class="page-title"><?php esc_html_e( 'Nothing to show right now...', 'thehandspace' ); ?></h1>
+
+		<?php
+		else : ?>
+
+			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'thehandspace' ); ?></h1>
+
+		<?php
+		endif; ?>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
 		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-
-			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'thehandspace' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
-		
-		<?php elseif ( is_page('current') ) : ?>
-			<p><?php esc_html_e( 'Sorry, nothing to show here. Please come back later.', 'thehandspace' ); ?></p>
+		if ( is_page('current') ) : ?>
+			<p><?php esc_html_e( 'Please come back later or sign up for our email list below to get updates.', 'thehandspace' ); ?></p>
 			
 		<?php elseif ( is_search() ) : ?>
 
