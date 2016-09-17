@@ -754,52 +754,50 @@ article .show-images .image {
   margin-bottom: 4em;
 }
 /* line 94, ../sass/elements/_main.scss */
-article .show-images p {
-  font-size: 12px;
-  line-height: 1.4;
+article .show-images figcaption {
   margin: 0.5em 0 0.5em 0;
 }
 @media screen and (max-width: 771px) {
-  /* line 102, ../sass/elements/_main.scss */
+  /* line 100, ../sass/elements/_main.scss */
   article .show-details,
   article .show-text,
   article .show-images {
     width: 100%;
     float: none;
   }
-  /* line 109, ../sass/elements/_main.scss */
+  /* line 107, ../sass/elements/_main.scss */
   article .show-images {
     width: 100%;
   }
-  /* line 112, ../sass/elements/_main.scss */
+  /* line 110, ../sass/elements/_main.scss */
   article .show-images .image {
     width: 100%;
     margin-bottom: 3em;
   }
 }
-/* line 119, ../sass/elements/_main.scss */
+/* line 117, ../sass/elements/_main.scss */
 article.featured {
   width: 100%;
   margin-bottom: 3em;
   overflow: hidden;
   clear: both;
 }
-/* line 125, ../sass/elements/_main.scss */
+/* line 123, ../sass/elements/_main.scss */
 article.featured a.show-link,
 article.featured a.show-link:visited,
 article.featured a.show-link:active {
   color: #111;
 }
-/* line 131, ../sass/elements/_main.scss */
+/* line 129, ../sass/elements/_main.scss */
 article.featured a.show-link:hover {
   color: #7772CA;
 }
-/* line 135, ../sass/elements/_main.scss */
+/* line 133, ../sass/elements/_main.scss */
 article.featured .subtitle,
 article.featured .details {
   margin: 0 0 1.5em 0;
 }
-/* line 140, ../sass/elements/_main.scss */
+/* line 138, ../sass/elements/_main.scss */
 article.featured .featured-image {
   width: 70%;
   border: none;
@@ -807,41 +805,41 @@ article.featured .featured-image {
   float: right;
 }
 @media screen and (max-width: 771px) {
-  /* line 149, ../sass/elements/_main.scss */
+  /* line 147, ../sass/elements/_main.scss */
   article.featured .featured-image {
     width: 100%;
     float: none;
   }
 }
 
-/* line 170, ../sass/elements/_main.scss */
+/* line 168, ../sass/elements/_main.scss */
 #page.about #main, #page.contact #main {
   font-size: 22px;
   line-height: 1.3;
   margin-top: 1em;
 }
-/* line 175, ../sass/elements/_main.scss */
+/* line 173, ../sass/elements/_main.scss */
 #page.about #main section, #page.contact #main section {
   font-size: 18px;
   margin-bottom: 1.5em;
 }
-/* line 180, ../sass/elements/_main.scss */
+/* line 178, ../sass/elements/_main.scss */
 #page.about #main h2,
 #page.about #main h3, #page.contact #main h2,
 #page.contact #main h3 {
   font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
   font-size: 22px;
 }
-/* line 192, ../sass/elements/_main.scss */
+/* line 190, ../sass/elements/_main.scss */
 #page.about #main section p {
   margin-bottom: 0.5em;
 }
-/* line 197, ../sass/elements/_main.scss */
+/* line 195, ../sass/elements/_main.scss */
 #page.about #main h2,
 #page.about #main h3 {
   margin-bottom: 1em;
 }
-/* line 206, ../sass/elements/_main.scss */
+/* line 204, ../sass/elements/_main.scss */
 #page.contact #main h2,
 #page.contact #main h3 {
   margin-bottom: 0.5em;
