@@ -1,0 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+nav a {
+	font-family: $font__header, $font__main;
+	clear: both;
+}
+
+article {
+	header,
+	.title {
+	    font-family: $font__header, $font__main;
+	    font-size: 24px;
+	}
+}

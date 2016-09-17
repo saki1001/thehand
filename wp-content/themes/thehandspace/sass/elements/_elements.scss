@@ -1,0 +1,176 @@
+// html {
+// 	box-sizing: border-box;
+// }
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
+
+
+// Custom
+// **********************
+
+/*Clearfixing main elements*/
+body:before,
+body:after,
+#page:before,
+#page:after,
+header:before,
+header:after,
+#header-container:before,
+#header-container:after,
+#content:before,
+#content:after,
+#main:before,
+#main:after,
+#footer-content:before,
+#footer-content:after {
+    content:"";
+    display:table;
+}
+body:after,
+#page:after,
+header:after,
+#header-container:after,
+#main:after,
+#content:after,
+#footer-content:after {
+    clear:both;
+}
+body,
+#page,
+header,
+#main,
+#content,
+.footer-content {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    width: 100%;    
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 62.5%;
+    line-height: 1;
+    color: #000000;
+    position: relative;
+    background: white;
+    // -webkit-animation:myfirst 10s linear infinite;
+    //    -moz-animation:myfirst 10s linear infinite;
+    //      -o-animation:myfirst 10s linear infinite;
+    //         animation:myfirst 10s linear infinite;
+}
+
+// @keyframes myfirst {
+//     0%, 20%, 80%, 100%   {background-color:#fcee21;}
+//     50%  {background-color:yellowgreen;}
+// }
+
+// @-moz-keyframes myfirst {
+//     0%, 20%, 80%, 100%   {background-color:#fcee21;}
+//     50%  {background-color:yellowgreen;}
+// }
+
+// @-webkit-keyframes myfirst {
+//     0%, 20%, 80%, 100%   {background-color:#fcee21;}
+//     50%  {background-color:yellowgreen;}
+// }
+
+// @-o-keyframes myfirst {
+//     0%, 20%, 80%, 100%   {background-color:#fcee21;}
+//     50%  {background-color:yellowgreen;}
+// }
+
+/*
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+*/
+
+footer, .push {
+    height: 85px; /* .push must be the same height as .footer */
+}
+
+.push {
+    width: 100%;
+    overflow: hidden; /*clearfix*/
+    position: relative;
+    z-index: -1;
+}
+
+footer {
+    width: 100%;
+    background-color: $black;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-wrap {
+    text-align: right;
+    font-size: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#page,
+.footer-wrap {
+    width: 90%;
+    max-width: 900px;
+    padding: 0 5%;
+
+    @media screen and (max-width:$mobile__max-width) {
+        width: 96%;
+        padding: 0 2%;
+    }
+}
+
+#page {
+    margin: 0 auto -85px; /* the bottom margin is the negative value of the footer's height */;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+
+@import "header";
+
+@import "main";
+
+@import "footer";

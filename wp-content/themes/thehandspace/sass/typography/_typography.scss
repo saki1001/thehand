@@ -1,0 +1,23 @@
+@font-face {
+	font-family: $font__header;
+    src: url('../fonts/Arial Narrow Bold Italic.ttf') format("truetype");
+}
+
+body {
+	font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	// @include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+
+@import "copy";

@@ -1,0 +1,49 @@
+nav {
+    margin-bottom: 0;
+    float: right;
+
+    ul {
+        margin: 0 0 0 1em;
+
+        li {
+            display: inline;
+            font-size: 22px;
+            margin-left: 1em;
+
+            a,
+            a:visited,
+            a:active {
+                color: $black;
+            }
+
+            a:hover {
+                color: $periwinkle;
+            }
+
+            &.current-menu-item {
+                a,
+                a:visited,
+                a:active {
+                    color: $periwinkle;
+                }
+
+                a:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:$mobile__max-width) {
+        float: none;
+
+        ul {
+            margin: 1em 0 0 18px;
+
+            li {
+                margin: 0 1em 0 0;
+                // display: block;
+            }
+        }
+    }
+}

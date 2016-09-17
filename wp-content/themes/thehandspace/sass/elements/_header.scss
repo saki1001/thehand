@@ -1,0 +1,56 @@
+
+#header,
+#content {
+    padding: 0 20px;
+
+    @media screen and (max-width:$mobile__max-width) {
+        padding: 0 10px;
+    }
+}
+
+#header {
+    font-size: 18px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #000000;
+    background: url('../images/hand-logo.png') no-repeat -5px 8px;
+    position: relative;
+    z-index: 1;
+
+    #branding {
+        max-width: 50%;
+        margin-bottom: 0;
+        float: left;
+
+        .site-title {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin: 0 0 0 8px;
+
+            a,
+            a:visited {
+                color: $red;
+            }
+        }
+
+        .site-description {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width:$mobile__max-width) {
+        #branding {
+            float: none;
+        }
+        
+        #branding {
+            max-width: 100%;
+            margin-bottom: 10px;
+
+            .site-title {
+                margin: 0 0 0 18px;
+            }
+        }
+    }
+}

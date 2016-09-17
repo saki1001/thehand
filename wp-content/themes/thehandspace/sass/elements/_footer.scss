@@ -1,0 +1,125 @@
+footer {
+    #email-signup {
+        width: 50%;
+        margin-top: 20px;
+        float: left;
+    }
+
+    #mc_embed_signup {
+        font-family: 'Arial', Helvetica, sans-serif;
+        font-size:14px;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+
+        form {
+            display: block;
+            overflow: hidden;
+        }
+
+        .mc-field-group,
+        .clear {
+            float: left;
+        }
+
+        .mc-field-group {
+            width: 75%;
+        }
+
+        .clear {
+            width: 25%;
+        }
+
+        #mce-responses {
+            width: 50%;
+            max-width: 400px;
+            height: 96px;
+            position: absolute;
+            top: -96px;
+            float: none;
+            overflow: hidden;
+            
+            .response {
+                height: 48px;
+                padding: 20px;
+                text-align: left;
+                line-height: 1.2;
+                background-color: white;
+                border: #e20031 solid 4px;
+            }
+        }
+
+        div.mce_inline_error {
+            margin: 0 !important;
+            text-align: left;
+        }
+
+        label {
+            display: none;
+        }
+
+        input[type="email"] {
+            font-family: 'Arial', Helvetica, sans-serif;
+            font-size: 16px;
+            width: 100%;
+            text-indent: 15px;
+            border: none;
+            padding: 11px 0;
+        }
+
+        input[type="submit"] {
+            font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
+            font-size: 18px;
+            border: 0;
+            color: white;
+            background-color: #e20031;
+            line-height: normal;
+            overflow: visible;
+            width: 100%;
+            padding: 10px;
+            -webkit-appearance: button; /* for input */
+            -webkit-user-select: none; /* for button */
+               -moz-user-select: none;
+                -ms-user-select: none;
+        }
+    }
+
+    #copy {
+        font-size: 12px;
+        color: white;
+        margin: 36px 0 18px;
+        text-align: right;
+        float: right;
+    }
+}
+
+@media screen and (max-width:700px) {
+    footer #email-signup,
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup .clear {
+        width: 100%;
+        float: none;
+    }
+
+    #mc_embed_signup .mc-field-group,
+    #mc_embed_signup .clear {
+        margin-bottom: 15px;
+    }
+
+    #mc_embed_signup #mce-responses {
+        width: 90%;
+    }
+
+    footer #copy {
+        float: none;
+    }
+
+    footer, .push {
+        height: 220px; /* .push must be the same height as .footer */
+    }
+
+    #page {
+        margin: 0 auto -220px; /* the bottom margin is the negative value of the footer's height */;
+    }
+
+}

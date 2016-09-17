@@ -1,0 +1,25 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
+    font-size: 18px;
+    border: 0;
+    color: white;
+    background-color: $color__background-button;
+    line-height: normal;
+    overflow: visible;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+
+	&:hover,
+	&:active,
+	&:focus {
+		// nothing yet
+	}
+}
