@@ -160,9 +160,10 @@ article {
     }
 }
 
-
-
+// Page Styles
+// **********************
 #page {
+
     &.about,
     &.contact {
         #main {
@@ -205,6 +206,17 @@ article {
             h3 {
                 margin-bottom: 0.5em;
             }
+        }
+    }
+}
+
+// Custom Show Pages
+// **********************
+body {
+    // Katya Tepper
+    &.postid-44 {
+        article .show-text {
+            margin-top: 0em;
         }
     }
 }
