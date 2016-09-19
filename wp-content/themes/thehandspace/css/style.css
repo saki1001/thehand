@@ -623,42 +623,47 @@ footer {
   padding-bottom: 1em;
   margin-bottom: 2em;
   border-bottom: 1px solid #000000;
-  background: url("../images/hand-logo.png") no-repeat -5px 8px;
   position: relative;
   z-index: 1;
 }
-/* line 21, ../sass/elements/_header.scss */
+/* line 20, ../sass/elements/_header.scss */
+#header #logo {
+  position: absolute;
+  top: 8px;
+  left: -5px;
+}
+/* line 26, ../sass/elements/_header.scss */
 #header #branding {
   max-width: 50%;
   margin-bottom: 0;
   float: left;
 }
-/* line 26, ../sass/elements/_header.scss */
+/* line 31, ../sass/elements/_header.scss */
 #header #branding .site-title {
   font-size: 22px;
   text-transform: uppercase;
   margin: 0 0 0 8px;
 }
-/* line 31, ../sass/elements/_header.scss */
+/* line 36, ../sass/elements/_header.scss */
 #header #branding .site-title a,
 #header #branding .site-title a:visited {
   color: #D80000;
 }
-/* line 37, ../sass/elements/_header.scss */
+/* line 42, ../sass/elements/_header.scss */
 #header #branding .site-description {
   margin-bottom: 0;
 }
 @media screen and (max-width: 500px) {
-  /* line 43, ../sass/elements/_header.scss */
+  /* line 48, ../sass/elements/_header.scss */
   #header #branding {
     float: none;
   }
-  /* line 47, ../sass/elements/_header.scss */
+  /* line 52, ../sass/elements/_header.scss */
   #header #branding {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  /* line 51, ../sass/elements/_header.scss */
+  /* line 56, ../sass/elements/_header.scss */
   #header #branding .site-title {
     margin: 0 0 0 18px;
   }
@@ -690,7 +695,7 @@ footer {
     line-height: 1.4;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 771px) {
   /* line 27, ../sass/elements/_main.scss */
   #main ul {
     width: 100%;
@@ -940,44 +945,68 @@ footer #copy {
   text-align: right;
   float: right;
 }
-
-@media screen and (max-width: 700px) {
-  /* line 97, ../sass/elements/_footer.scss */
-  footer #email-signup,
-  #mc_embed_signup .mc-field-group,
-  #mc_embed_signup .clear {
+@media screen and (max-width: 771px) {
+  /* line 1, ../sass/elements/_footer.scss */
+  footer {
+    height: 127px;
+  }
+  /* line 99, ../sass/elements/_footer.scss */
+  footer #email-signup {
     width: 100%;
     float: none;
   }
-
   /* line 104, ../sass/elements/_footer.scss */
-  #mc_embed_signup .mc-field-group,
-  #mc_embed_signup .clear {
-    margin-bottom: 15px;
+  footer #mc_embed_signup #mce-responses {
+    width: 75%;
   }
-
-  /* line 109, ../sass/elements/_footer.scss */
-  #mc_embed_signup #mce-responses {
-    width: 90%;
-  }
-
-  /* line 113, ../sass/elements/_footer.scss */
+  /* line 108, ../sass/elements/_footer.scss */
   footer #copy {
     float: none;
   }
-
-  /* line 117, ../sass/elements/_footer.scss */
-  footer, .push {
-    height: 220px;
-    /* .push must be the same height as .footer */
+  /* line 112, ../sass/elements/_footer.scss */
+  footer .push {
+    height: 127px;
+    /* .push must be the same height as footer */
   }
-
-  /* line 121, ../sass/elements/_footer.scss */
-  #page {
+  /* line 116, ../sass/elements/_footer.scss */
+  footer #page {
+    margin: 0 auto -127px;
+    /* the bottom margin is the negative value of the footer's height */
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 1, ../sass/elements/_footer.scss */
+  footer {
+    height: 220px;
+  }
+  /* line 124, ../sass/elements/_footer.scss */
+  footer #email-signup,
+  footer #mc_embed_signup .mc-field-group,
+  footer #mc_embed_signup .clear {
+    width: 100%;
+    float: none;
+  }
+  /* line 131, ../sass/elements/_footer.scss */
+  footer #mc_embed_signup .mc-field-group,
+  footer #mc_embed_signup .clear {
+    margin-bottom: 15px;
+  }
+  /* line 136, ../sass/elements/_footer.scss */
+  footer #mc_embed_signup #mce-responses {
+    width: 96%;
+  }
+  /* line 140, ../sass/elements/_footer.scss */
+  footer .push {
+    height: 220px;
+    /* .push must be the same height as footer */
+  }
+  /* line 144, ../sass/elements/_footer.scss */
+  footer #page {
     margin: 0 auto -220px;
     /* the bottom margin is the negative value of the footer's height */
   }
 }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

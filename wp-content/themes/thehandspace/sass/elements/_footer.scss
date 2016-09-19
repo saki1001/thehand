@@ -91,35 +91,59 @@ footer {
         text-align: right;
         float: right;
     }
-}
 
-@media screen and (max-width:700px) {
-    footer #email-signup,
-    #mc_embed_signup .mc-field-group,
-    #mc_embed_signup .clear {
-        width: 100%;
-        float: none;
+
+    @media screen and (max-width:$tablet__max-width) {
+        height: 127px;
+
+        #email-signup {
+            width: 100%;
+            float: none;
+        }
+
+        #mc_embed_signup #mce-responses {
+            width: 75%;
+        }
+
+        #copy {
+            float: none;
+        }
+
+        .push {
+            height: 127px; /* .push must be the same height as footer */
+        }
+
+        #page {
+            margin: 0 auto -127px; /* the bottom margin is the negative value of the footer's height */;
+        }
     }
 
-    #mc_embed_signup .mc-field-group,
-    #mc_embed_signup .clear {
-        margin-bottom: 15px;
-    }
+    @media screen and (max-width:$mobile__max-width) {
+        height: 220px;
 
-    #mc_embed_signup #mce-responses {
-        width: 90%;
-    }
+        #email-signup,
+        #mc_embed_signup .mc-field-group,
+        #mc_embed_signup .clear {
+            width: 100%;
+            float: none;
+        }
 
-    footer #copy {
-        float: none;
-    }
+        #mc_embed_signup .mc-field-group,
+        #mc_embed_signup .clear {
+            margin-bottom: 15px;
+        }
 
-    footer, .push {
-        height: 220px; /* .push must be the same height as .footer */
-    }
+        #mc_embed_signup #mce-responses {
+            width: 96%;
+        }
 
-    #page {
-        margin: 0 auto -220px; /* the bottom margin is the negative value of the footer's height */;
-    }
+        .push {
+            height: 220px; /* .push must be the same height as footer */
+        }
 
+        #page {
+            margin: 0 auto -220px; /* the bottom margin is the negative value of the footer's height */;
+        }
+
+    }
 }
