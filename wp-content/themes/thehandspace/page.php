@@ -16,7 +16,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
 			<?php
 
 			// find todays date
@@ -24,9 +23,6 @@ get_header(); ?>
 
 			if( is_front_page() || is_home() ) :
 
-				// Include page content as intro?
-				the_content();
-				
 				$featured_posts = get_field('featured_posts');
 
 				if( $featured_posts ) :
@@ -40,7 +36,7 @@ get_header(); ?>
 
 				wp_reset_postdata();
 				endif;
-			
+
 			elseif( is_page('current') || is_page('past') ) :
 
 				if( is_page('current') ) :

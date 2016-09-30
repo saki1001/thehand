@@ -80,6 +80,17 @@
 	<?php
 		global $post;
 		$slug = get_post( $post )->post_name;
+		
+		if( is_front_page() || is_home() ) :
+
+	?>
+		<section id="home-message">
+			<?php 
+				echo $post->post_content;
+			?>
+		</section>
+	<?php
+		endif;
 	?>
 
 	<div id="content" class="site-content">
