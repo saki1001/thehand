@@ -80,13 +80,14 @@
 	<?php
 		global $post;
 		$slug = get_post( $post )->post_name;
+		$content = $post->post_content;
 		
-		if( is_front_page() || is_home() ) :
+		if( ( is_front_page() || is_home() ) && !empty($content) ) :
 
 	?>
 		<section id="home-message">
 			<?php 
-				echo $post->post_content;
+				echo $content;
 			?>
 		</section>
 	<?php

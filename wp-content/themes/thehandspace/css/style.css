@@ -704,7 +704,7 @@ footer {
   }
 }
 
-/* line 35, ../sass/elements/_main.scss */
+/* line 37, ../sass/elements/_main.scss */
 #home-message {
   font-size: 16px;
   margin: 0 20px 30px 20px;
@@ -712,26 +712,26 @@ footer {
   border-bottom: solid 1px #111;
 }
 
-/* line 47, ../sass/elements/_main.scss */
+/* line 49, ../sass/elements/_main.scss */
 article .show-content,
 article .show-image {
   width: 100%;
   overflow: hidden;
   clear: both;
 }
-/* line 54, ../sass/elements/_main.scss */
+/* line 56, ../sass/elements/_main.scss */
 article .show-details {
   width: 25%;
   margin-right: 5%;
   float: left;
   box-sizing: border-box;
 }
-/* line 61, ../sass/elements/_main.scss */
+/* line 63, ../sass/elements/_main.scss */
 article .title {
   margin: 0;
   line-height: 1.4;
 }
-/* line 67, ../sass/elements/_main.scss */
+/* line 69, ../sass/elements/_main.scss */
 article .subtitle,
 article .details,
 article .show-text,
@@ -742,17 +742,17 @@ article a {
   line-height: 1.4;
   margin: 0 0 0.5em 0;
 }
-/* line 78, ../sass/elements/_main.scss */
+/* line 80, ../sass/elements/_main.scss */
 article .subtitle {
   font-style: italic;
 }
-/* line 82, ../sass/elements/_main.scss */
+/* line 84, ../sass/elements/_main.scss */
 article .show-text {
   width: 70%;
   margin-top: 2em;
   float: right;
 }
-/* line 88, ../sass/elements/_main.scss */
+/* line 90, ../sass/elements/_main.scss */
 article .show-images {
   width: 90%;
   margin: 3em auto;
@@ -760,57 +760,57 @@ article .show-images {
   border-top: solid 1px #111;
   text-align: center;
 }
-/* line 95, ../sass/elements/_main.scss */
+/* line 97, ../sass/elements/_main.scss */
 article .show-images .image {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 4em;
 }
-/* line 101, ../sass/elements/_main.scss */
+/* line 103, ../sass/elements/_main.scss */
 article .show-images figcaption {
   margin: 0.5em 0 0.5em 0;
 }
 @media screen and (max-width: 771px) {
-  /* line 107, ../sass/elements/_main.scss */
+  /* line 109, ../sass/elements/_main.scss */
   article .show-details,
   article .show-text,
   article .show-images {
     width: 100%;
     float: none;
   }
-  /* line 114, ../sass/elements/_main.scss */
+  /* line 116, ../sass/elements/_main.scss */
   article .show-images {
     width: 100%;
   }
-  /* line 117, ../sass/elements/_main.scss */
+  /* line 119, ../sass/elements/_main.scss */
   article .show-images .image {
     width: 100%;
     margin-bottom: 3em;
   }
 }
-/* line 124, ../sass/elements/_main.scss */
+/* line 126, ../sass/elements/_main.scss */
 article.featured {
   width: 100%;
   margin-bottom: 3em;
   overflow: hidden;
   clear: both;
 }
-/* line 130, ../sass/elements/_main.scss */
+/* line 132, ../sass/elements/_main.scss */
 article.featured a.show-link,
 article.featured a.show-link:visited,
 article.featured a.show-link:active {
   color: #111;
 }
-/* line 136, ../sass/elements/_main.scss */
+/* line 138, ../sass/elements/_main.scss */
 article.featured a.show-link:hover {
   color: #7772CA;
 }
-/* line 140, ../sass/elements/_main.scss */
+/* line 142, ../sass/elements/_main.scss */
 article.featured .subtitle,
 article.featured .details {
   margin: 0 0 1.5em 0;
 }
-/* line 145, ../sass/elements/_main.scss */
+/* line 147, ../sass/elements/_main.scss */
 article.featured .featured-image {
   width: 70%;
   border: none;
@@ -818,53 +818,53 @@ article.featured .featured-image {
   float: right;
 }
 @media screen and (max-width: 771px) {
-  /* line 154, ../sass/elements/_main.scss */
+  /* line 156, ../sass/elements/_main.scss */
   article.featured .featured-image {
     width: 100%;
     float: none;
   }
 }
 
-/* line 176, ../sass/elements/_main.scss */
+/* line 178, ../sass/elements/_main.scss */
 #page.about #main, #page.contact #main {
   font-size: 22px;
   line-height: 1.3;
   margin-top: 1em;
 }
-/* line 181, ../sass/elements/_main.scss */
+/* line 183, ../sass/elements/_main.scss */
 #page.about #main section, #page.contact #main section {
   font-size: 18px;
   margin-bottom: 1.5em;
 }
-/* line 186, ../sass/elements/_main.scss */
+/* line 188, ../sass/elements/_main.scss */
 #page.about #main h2,
 #page.about #main h3, #page.contact #main h2,
 #page.contact #main h3 {
   font-family: 'Arial Narrow Bold Italic', 'Arial', Helvetica, sans-serif;
   font-size: 22px;
 }
-/* line 198, ../sass/elements/_main.scss */
+/* line 200, ../sass/elements/_main.scss */
 #page.about #main section p {
   margin-bottom: 0.5em;
 }
-/* line 203, ../sass/elements/_main.scss */
+/* line 205, ../sass/elements/_main.scss */
 #page.about #main h2,
 #page.about #main h3 {
   margin-bottom: 1em;
 }
-/* line 212, ../sass/elements/_main.scss */
+/* line 214, ../sass/elements/_main.scss */
 #page.contact #main h2,
 #page.contact #main h3 {
   margin-bottom: 0.5em;
 }
 
-/* line 224, ../sass/elements/_main.scss */
+/* line 226, ../sass/elements/_main.scss */
 .page .entry-content h2 {
   font-size: 2rem;
   margin-bottom: 1em;
 }
 
-/* line 236, ../sass/elements/_main.scss */
+/* line 238, ../sass/elements/_main.scss */
 body.postid-44 article .show-text {
   margin-top: 0em;
 }
