@@ -14,8 +14,8 @@
 	$start_date = date('M j', strtotime(get_field('start_date')));
 	$end_date = date('M j', strtotime(get_field('end_date')));
 	$opening_date = date('F j', strtotime(get_field('opening_date')));
-	$start_time = date('g', strtotime($opening_date . get_field('opening_time_start')));
-	$end_time = date('ga', strtotime($opening_date . get_field('opening_time_end')));
+	$start_time = date('g', strtotime($opening_date . ' ' . get_field('opening_time_start')));
+	$end_time = date('ga', strtotime($opening_date . ' ' . get_field('opening_time_end')));
 ?>
 
 <article id="post-<?php echo $ID; ?>" class="featured">
