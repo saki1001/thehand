@@ -31,9 +31,16 @@
 			<p class="details">
 				<?php echo $start_date . ' - ' . $end_date; ?>
 			</p>
+
+			<?php
+				if( $press_release_url ) :
+			?>
 			<a href="<?php echo $press_release_url; ?>" title="<?php echo $title . ' Press Release'; ?>" target="_blank">
 				Press Release
 			</a>
+			<?php
+				endif;
+			?>
 		</div><!-- .show-details -->
 
 		<div class="show-text">
