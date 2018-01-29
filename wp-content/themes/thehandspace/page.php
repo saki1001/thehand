@@ -81,17 +81,18 @@ get_header(); ?>
 				// args
 				$args = array(
 					'numberposts'	=> -1,
+					'posts_per_page' => -1,
 					'post_type'		=> 'show',
-			        'meta_key' => 'start_date',
-			        'orderby'   => 'meta_value',
-			        'order' => 'DESC',
+					'meta_key' => 'start_date',
+					'orderby'   => 'meta_value',
+					'order' => 'DESC',
 					'meta_query'	=> $meta_query
 				);
 
 
 				// query
 				$the_query = new WP_Query( $args );
-
+				
 				if( $the_query->have_posts() ):
 
 					while ( $the_query->have_posts() ) : $the_query->the_post();
